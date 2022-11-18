@@ -1,7 +1,7 @@
-version: '3.8'
+version: '1.0'
 services:
   appseed-app:
-    container_name: appseed_app
+    container_name: PkMallia
     restart: always
     env_file: .env
     build: .
@@ -19,7 +19,7 @@ services:
     networks:
       - web_network
     depends_on: 
-      - appseed-app
+      - PkMallia
 networks:
   db_network:
     driver: bridge
